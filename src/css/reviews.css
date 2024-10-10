@@ -1,0 +1,99 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    ul, ol, li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+@media screen and (min-width: 360px) {
+    .reviews {
+        padding: 0 20px;
+        max-width: 320px;
+    }
+    .swiper {
+        width: 100%; 
+        max-width: 320px;
+        background-color: #e4e5e6;
+        border-radius: 16px;
+        margin-bottom: 24px;  
+    }
+    .reviews-title {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 123%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--black);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .reviews-box {
+        border-radius: 16px;
+        padding: 32px;
+        max-width: 100%;
+        height: 296px;
+        background-color: #e4e5e6;
+    }
+    .reviews-text {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: #292929;
+        margin-bottom: 24px;
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    .person-box {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        /* height: 40px; */
+    }
+    .person-text {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: black;
+    }
+    .buttons-box {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-end;
+    }
+    .right-arrow-btn {
+        border: 1px solid var(--black);
+        border-radius: 8px;
+        padding: 12px;
+        width: 40px;
+        height: 40px;
+        display: flex;                /* Використовуємо flexbox */
+        align-items: center;         /* Вертикальне центрування */
+        justify-content: center;      /* Горизонтальне центрування */
+        background-color: white;     /* Колір фону кнопки (можете змінити) */
+        cursor: pointer;    
+    }
+    .left-arrow-btn {
+        border: 1px solid var(--black);
+        border-radius: 8px;
+        padding: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    .arrow-icon {
+        margin: 0 auto;
+        stroke-width: 2px;
+        width: 24px;
+        height: 24px;
+    }
+    .disabled {
+        opacity: 0.5; /* Зменшуємо непрозорість */
+        pointer-events: none; /* Забороняємо кліки */
+    }
+}
+}
