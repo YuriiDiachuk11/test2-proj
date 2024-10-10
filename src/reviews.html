@@ -10,36 +10,28 @@
 
     <section class="reviews">
         <h2 class="reviews-title">REVIEWS</h2>
-        <!-- Slider main container -->
         <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <ul>
-              <li class="swiper-slide">
-                <div class="reviews-box">
-                  <p class="reviews-text">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations</p>
-                  <div class="person-box">
-                    <img class="person-icon" src="./img/nataliia shevchenko.png" alt="Nataliia Shevchenko">
-                    <p class="person-text">Nataliia Shevchenko</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          
+            <div class="swiper-wrapper js-slider">
+                <ul class="slide-list" id="slide-list">
+                    <li class="slide-item">
+                        <p class="reviews-text"></p>
+                    <div class="person-box">
+                        <img class="person-icon" src="" alt="">
+                        <p class="person-text"></p>
+                    </div>
+                        
+                    </li>
+                    <!-- Перелік відгуків, завантажений з сервера, додасться тут -->
+                </ul>
+            </div>
         </div>
+
         <div class="buttons-box">
-            <button class="right-arrow-btn"><svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 12H4.00001" stroke="#E4E5E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M10 18L4 12L10 6" stroke="#E4E5E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg></button>
-            <button class="left-arrow-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 12H20" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M14 6L20 12L14 18" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg></button>
+            <button class="left-arrow-btn js-left-btn" id="prev-button" disabled>←</button>
+            <button class="right-arrow-btn js-right-btn" id="next-button">→</button>
         </div>
-      </section>
+    </section>
+    
 
     <a href="./index.html"></a>
     <script type="module" src="./main.js"></script>
