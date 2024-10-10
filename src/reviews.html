@@ -8,29 +8,26 @@
 </head>
 <body>
 
-    <section class="reviews">
-        <h2 class="reviews-title">REVIEWS</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper js-slider">
-                <ul class="slide-list" id="slide-list">
-                    <li class="slide-item">
-                        <p class="reviews-text"></p>
-                    <div class="person-box">
-                        <img class="person-icon" src="" alt="">
-                        <p class="person-text"></p>
-                    </div>
-                        
-                    </li>
-                    <!-- Перелік відгуків, завантажений з сервера, додасться тут -->
-                </ul>
-            </div>
-        </div>
-
-        <div class="buttons-box">
-            <button class="left-arrow-btn js-left-btn" id="prev-button" disabled>←</button>
-            <button class="right-arrow-btn js-right-btn" id="next-button">→</button>
-        </div>
-    </section>
+<section class="reviews">
+    <h2 class="reviews-title">REVIEWS</h2>
+    <div class="swiper-container" init="false">
+        
+        <ul class="review-list swiper-wrapper" >
+            <li class="review-item swiper-slide">
+                <p class="review-text"></p>
+                <div class="person-box">
+                    <img class="person-icon" src="" alt="">
+                    <p class="person-text"></p>
+                </div>
+            </li>
+ 
+        </ul>
+    </div>
+    <div class="buttons-container">
+        <button class="slider-button prev-button">←</button>
+        <button class="slider-button next-button">→</button>
+    </div>
+</section>
     
 
     <a href="./index.html"></a>

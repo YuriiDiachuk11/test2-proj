@@ -21,32 +21,19 @@ ul, ol, li {
     line-height: 123%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black, #000); /* задайте чітке значення чорного кольору */
+    color: #000; 
     text-align: center;
     margin-bottom: 40px;
 }
-.swiper {
-    width: 100%;
+.swiper-container {
     max-width: 320px;
     background-color: #e4e5e6;
     border-radius: 16px;
     margin-bottom: 24px;
-}
-.swiper-wrapper {
-    border-radius: 16px;
     padding: 32px;
-    max-width: 320px;
     height: 296px;
-    background-color: #e4e5e6;
 }
-
-.slide-item {
-    border-radius: 16px;
-    padding: 32px;
-    background-color: #e4e5e6;
-}
-
-.reviews-text {
+.review-text {
     font-family: Impact, sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -62,7 +49,11 @@ ul, ol, li {
     gap: 16px;
     align-items: center;
 }
-
+.person-icon {
+    border-radius: 24px;
+    width: 40px;
+    height: 40px;
+}
 .person-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 600;
@@ -72,13 +63,12 @@ ul, ol, li {
     color: black;
 }
 
-.buttons-box {
+.buttons-container {
     display: flex;
     gap: 16px;
     justify-content: flex-end;
 }
-
-.right-arrow-btn, .left-arrow-btn {
+.prev-button, .next-button {
     border: 1px solid #000;
     border-radius: 8px;
     padding: 12px;
@@ -87,30 +77,18 @@ ul, ol, li {
 }
 
 
-.arrow-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 24px;
-    object-fit: cover;
-}
 
 /* Tablet view */
 @media screen and (min-width: 768px) {
     .reviews {
         max-width: 768px;
     }
-    .swiper {
+    .swiper-container {
         max-width: 768px;
-    }
-    .swiper-wrapper {
-        max-width: 704px;
         height: 224px;
     }
     .reviews-title {
         font-size: 72px;
-    }
-    .slide-list {
-        gap: 24px;
     }
 }
 
@@ -119,19 +97,13 @@ ul, ol, li {
     .reviews {
         max-width: 1280px;
     }
-    .swiper {
-        max-width: 704px;
-    }
-    .swiper-wrapper {
+    .swiper-container {
         max-width: 592px;
     }
     .reviews-title {
         font-size: 108px;
     }
-    .slide-list {
-        gap: 32px;
-    }
-    .right-arrow-btn, .left-arrow-btn {
+    .prev-button, .next-button {
         width: 48px;
         height: 48px;
     }
