@@ -1,8 +1,15 @@
-export const BASE_URL = "https://portfolio-js.b.goit.study/api";
+export const BASE_URL = "https://portfolio-js.b.goit.study/api/reviews";
 import axios from 'axios';
 
-async function fetchReviews() {
-    const url = `${BASE_URL}`
-    const data = await axios.get("url")
-}
+
+// export async function fetchReviews() {
+//     const url = `${BASE_URL}`
+//     const {data: data, status} = await axios.get(url);
+//     console.log(data, status);
+
+//     if(status !== "ok") {
+//         throw new Error ("Not Found");
+//     }
+//     return data;
+// }
    
