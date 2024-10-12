@@ -26,13 +26,25 @@ ul, ol, li {
     margin-bottom: 40px;
 }
 .swiper-container {
-    max-width: 320px;
-    background-color: #e4e5e6;
+    max-width: 1280px;
+    background-color: transparent;
     border-radius: 16px;
     margin-bottom: 24px;
-    padding: 32px;
     height: 296px;
+    overflow: hidden;
 }
+.swiper-wrapper {
+    display: flex;
+}
+.review-item {
+    width: 100%; 
+    flex-shrink: 0;
+    background-color: #e4e5e6;
+    padding: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+    
 .review-text {
     font-family: Impact, sans-serif;
     font-weight: 300;
@@ -98,7 +110,14 @@ ul, ol, li {
         max-width: 1280px;
     }
     .swiper-container {
-        max-width: 592px;
+        max-width: 1280px;
+        padding: 32px;
+        
+    }
+    .review-item {
+        width: 592px;
+        flex-shrink: 0;
+        border-radius: 16px;
     }
     .reviews-title {
         font-size: 108px;
@@ -108,7 +127,4 @@ ul, ol, li {
         height: 48px;
     }
 }
-
-
-
-
+    
