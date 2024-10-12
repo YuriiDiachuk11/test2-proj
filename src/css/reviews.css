@@ -42,7 +42,6 @@ ul, ol, li {
     background-color: #e4e5e6;
     padding: 32px;
     box-sizing: border-box;
-    overflow: hidden;
 }
     
 .review-text {
