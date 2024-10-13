@@ -92,10 +92,9 @@ ul, ol, li {
                   /* Tablet view */
 
 @media screen and (min-width: 768px) {
-    .reviews {
-        max-width: 768px;
-    }
+    
     .swiper-container {
+        max-width: 768px;
         height: 224px;
     }
     .reviews-title {
@@ -106,12 +105,9 @@ ul, ol, li {
                    /* Desktop view */
 
 @media screen and (min-width: 1280px) {
-    .reviews {
-        max-width: 1280px;
-    }
+    
     .swiper-container {
         max-width: 1280px;
-        padding: 32px;
         
     }
     .review-item {
@@ -128,3 +124,5 @@ ul, ol, li {
     }
 }
     
+
+
