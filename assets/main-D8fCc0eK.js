@@ -1,0 +1,10 @@
+import{r as d,a,i as p,S as u}from"./vendor-C8GUCgza.js";(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const n of r.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&i(n)}).observe(document,{childList:!0,subtree:!0});function o(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function i(e){if(e.ep)return;e.ep=!0;const r=o(e);fetch(e.href,r)}})();d();const f="https://portfolio-js.b.goit.study/api/reviews",c=document.querySelector(".prev-button"),l=document.querySelector(".next-button");async function w(){try{const{data:s}=await a.get(f);m(s),y()}catch{p.show({title:"Not Found",messageColor:"black",color:"red",timeout:2e3,position:"topCenter"})}}function m(s){const t=s.map(({review:o,avatar_url:i,author:e})=>`
+        <li class="review-item swiper-slide">
+            <p class="review-text">${o}</p>
+            <div class="person-box">
+                <img class="person-icon" src="${i}" alt="${e}">
+                <p class="person-text">${e}</p>
+            </div>
+        </li>
+    `).join("");document.querySelector(".swiper-wrapper").innerHTML=t}function y(){const s={slidesPerView:1,spaceBetween:32,loop:!1,speed:500,navigation:{nextEl:".next-button",prevEl:".prev-button"},breakpoints:{360:{slidesPerView:1,slidesPerGroup:1},768:{slidesPerView:1,slidesPerGroup:1},1280:{slidesPerView:2,slidesPerGroup:1}},on:{slideChange:o}},t=new u(".swiper-container",s);document.addEventListener("keydown",i=>{i.key==="ArrowRight"&&!l.disabled?(i.preventDefault(),t.slideNext()):i.key==="ArrowLeft"&&!c.disabled&&(i.preventDefault(),t.slidePrev())}),window.addEventListener("resize",()=>t.update());function o(){c.disabled=t.isBeginning,l.disabled=t.isEnd}o()}w();
+//# sourceMappingURL=main-D8fCc0eK.js.map
