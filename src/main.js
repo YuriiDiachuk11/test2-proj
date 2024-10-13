@@ -1,6 +1,9 @@
 import { register } from 'swiper/element/bundle';
 import axios from 'axios';
 import Swiper from 'swiper';
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 
 register();
 
@@ -14,7 +17,13 @@ async function fetchReviews() {
         renderReviews(data);
         initializeSwiper();
     } catch (error) {
-        alert("Reviews not found.");
+        iziToast.show({
+            title: "Not Found",
+            messageColor: "black",
+            color: "red",
+            timeout: 2000,
+            position: "topCenter",
+        });
     }
 }
 
@@ -43,7 +52,7 @@ function initializeSwiper() {
             prevEl: '.prev-button',
         },
         breakpoints: {
-            360: { slidesPerView: 1, slidesPerGroup: 1 },
+            360: { slidesPerView: 1, slidesPerGroup: 1,},
             768: { slidesPerView: 1, slidesPerGroup: 1 },
             1280: { slidesPerView: 2, slidesPerGroup: 1 },
         },
@@ -54,8 +63,8 @@ function initializeSwiper() {
 
     const swiper = new Swiper('.swiper-container', swiperParams);
 
-    nextButton.addEventListener("click", () => swiper.slideNext());
-    prevButton.addEventListener("click", () => swiper.slidePrev());
+    // nextButton.addEventListener("click", () => swiper.slideNext());
+    // prevButton.addEventListener("click", () => swiper.slidePrev());
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "ArrowRight" && !nextButton.disabled) {

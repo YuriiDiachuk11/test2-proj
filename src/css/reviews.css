@@ -21,16 +21,16 @@ ul, ol, li {
     line-height: 123%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #000; 
+    /* color: #000;  */
     text-align: center;
     margin-bottom: 40px;
 }
 .swiper-container {
     max-width: 1280px;
-    background-color: transparent;
+    /* background-color: transparent; */
     border-radius: 16px;
     margin-bottom: 24px;
-    height: 296px;
+    height: auto;
     overflow: hidden;
 }
 .swiper-wrapper {
@@ -50,7 +50,7 @@ ul, ol, li {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #292929;
+    /* color: #292929; */
     margin-bottom: 24px;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -71,7 +71,7 @@ ul, ol, li {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
-    color: black;
+    /* color: black; */
 }
 
 .buttons-container {
@@ -108,7 +108,6 @@ ul, ol, li {
     
     .swiper-container {
         max-width: 1280px;
-        
     }
     .review-item {
         width: 592px;
